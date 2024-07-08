@@ -6,4 +6,15 @@
     </style>
 
     <style name="Theme.Project1_S24" parent="Base.Theme.Project1_S24" />
+
+    <style name="Theme.NavigationDrawer" parent="Base.Theme.Project1_S24">
+        <!-- Customize attributes as needed -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.NavigationDrawer.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.NavigationDrawer.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
