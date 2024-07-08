@@ -1,0 +1,42 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="edu.msudenver.cs3013.project1_s24.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="edu.msudenver.cs3013.project1_s24.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/noteDetailFragment"
+        android:name="edu.msudenver.cs3013.project1_s24.NoteDetailFragment"
+        android:label="fragment_note_detail">
+
+        <argument
+            android:name="noteId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+
+    <activity
+        android:id="@+id/noteDetailActivity"
+        android:name="edu.msudenver.cs3013.project1_s24.NoteDetailActivity"
+        android:label="Note Detail"
+        tools:layout="@layout/activity_note_detail" >
+        <argument
+            android:name="note"
+            app:argType="com.example.notes.Note"
+            android:defaultValue="@null" />
+    </activity>
+
+    <!-- Define other fragments and activities as needed -->
+
+</navigation>
